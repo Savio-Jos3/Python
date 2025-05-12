@@ -1,27 +1,12 @@
-class Shape:
-    def area(self):
-        print("Calculating area...")
+class Calculator:
+    # Simulating overloaded add() method
+    def add(self, a=0, b=0, c=0):
+        return a + b + c
 
-class Circle(Shape):
-    def area(self):
-        print("Area of circle: πr²")
+# Create object
+calc = Calculator()
 
-class Square(Shape):
-    def area(self):
-        print("Area of square: side²")
-
-s = Shape()
-s.area()  # Output: Calculating area...
-
-s = Circle()
-s.area()  # Output: Area of circle: πr² 
-s = Square()    
-s.area()  # Output: Area of square: side²
-# This code demonstrates polymorphism by calling the same method `area` on different objects.
-
-'''shapes = [Circle(), Square()]
-
-for s in shapes:
-    s.area()
-# This code demonstrates polymorphism by calling the same method `area` on different objects.
-# Each object has its own implementation of the method, allowing for different behaviors.'''
+# Call method with different number of arguments
+print("Sum of 2 and 3:", calc.add(2, 3))           # Output: 5
+print("Sum of 1, 2 and 3:", calc.add(1, 2, 3))      # Output: 6
+print("Sum with no arguments:", calc.add())        # Output: 0
