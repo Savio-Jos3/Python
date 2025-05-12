@@ -4,7 +4,9 @@ class Book:
 
     def __add__(self, other):
         return Book(self.pages + other.pages)
-
+    
+    def __str__(self):
+        return f"{self.pages} pages"
 
 book1 = Book(100)
 book2 = Book(150)
