@@ -5,7 +5,7 @@ from math import gcd
 #    and associated operations. Implement the following methods:
 #    - Reduce() to return the simplified fraction form.
 #    - add_() to add two rational numbers.
-#    - __lt__() to compare two rational numbers using the less-than operator.
+#    - __gt__() to compare two rational numbers using the less-than operator.
 # Use operator overloading to perform these operations.
 
 class Rational:
